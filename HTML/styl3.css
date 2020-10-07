@@ -1,13 +1,9 @@
 html {
-    font-style:Helvetica;
-
-
+    font-family:Helvetica;
 }
 
 #header {
     width:100%;
-
-
 }
 #header-left {
     background-color:rgb(130,69,85);
@@ -16,7 +12,6 @@ html {
     width:30%;
     text-align:center;
     float:left;
-
 }
 
 #left {
@@ -26,7 +21,6 @@ html {
     width:30%;      
     text-align:center;
     float:left;
-
 }
 
 #header-right {
@@ -49,33 +43,41 @@ html {
     float:left;
     margin-left:center;
     margin-right:center;
-
 }
 
 #main {
     background-color:rgb(240,234,226);
-    margin:120px;
+    margin-inline:120px;
     clear:both;
-    
-
 }
 
-#hours {
+#footer {
+    margin-inline:120px;
+    background-color:rgb(240,234,226);
+}
+
+table {
     border:1px;
     border-style:solid;
     border-color:rgb(130,69,85);
     color:rgb(130,69,85);
     margin-inline:10px;
-
-
-}
+    margin-left:auto;
+    margin-right:auto;
+    border-collapse: collapse;
+  }
+  table td, table th {
+    border: 1px;
+    border-style: solid;
+    border-color:rgb(130,69,85);
+    color:rgb(130,69,85);
+    padding: 10px;
+  }
 
 #car {
     height:200px;
-
 }
 
 #kwerenda {
-
     color:rgb(240,234,226);
 }
