@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Instrukcje</title>
+    </head>
+
+    <body>
+        <script>
+            //if i else
+            var x=1
+            if(x) document.write(typeof x)
+            var a=1
+            var b=0
+            if(b!=0) {
+                document.write("a:b=" + a / b)
+            } else {
+                document.write("b nie może być 0")
+                }
+
+            //switch
+            var liczba=1
+            switch (liczba) {
+                case 1:
+                    document.write("jeden")
+                    break
+                case 2:
+                    document.write("dwa")
+                    break
+                default:
+                    document.write('liczba = '+liczba)
+                }
+                document.write(typeof "tekst")
+
+            //for
+            for(var i=0;i<3;i++) {
+                alert(i)
+            }
+
+            //while
+            var i=0;
+            while (i<3) {
+                alert(i++)
+            }
+
+            //do while
+            var j=0;
+            do {
+                alert(j++)
+            } while (j<3)
+
+        </script>
+    </body>
+</html>
