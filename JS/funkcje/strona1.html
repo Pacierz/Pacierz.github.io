@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Proste Działania</title>
+    </head>
+
+    <body>
+        <h1>PROSTE DZIAŁANIA</h1>
+
+        <p>Podaj pierwszą liczbę</p>
+        <input type="number" id="i1"/></p>
+        <p>Podaj drugą liczbę</p>
+        <input type="number" id="i2"/></p>
+
+        <script>
+            function f(x) {
+                var a=parseInt(i1.value)
+                var b=parseInt(i2.value)
+                var w
+                if (isNaN(a) || isNaN(b)) {
+                w = "Proszę uzupełnić obie liczby"
+            }
+                else if(x==4 && b==0) {
+                w = "Nie wolno dzielić przez zero"
+            }
+                else {
+                if (x==1) w=a+b
+                else if(x==2) w=a-b
+                else if(x==3) w=a*b
+                else if(x==4 && b!=0) w=a/b
+                w="Wynik działania wynosi: "+w
+            }
+                o1.value=w
+            }
+
+        </script>
+
+        <button onclick="f(1)">DODAWANIE</button>
+        <button onclick="f(2)">ODEJMOWANIE</button>
+        <button onclick="f(3)">MNOŻENIE</button>
+        <button onclick="f(4)">DZIELENIE</button>
+        <output id="o1"></output>
+    </body>
+</html>
