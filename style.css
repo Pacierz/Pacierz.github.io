@@ -1,0 +1,94 @@
+body {
+	background-color: #222222;
+	color: white;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 20px;
+	margin: 0 !important;
+}
+
+#container {
+	width: 100%;
+	height: 100%
+}
+
+#top {
+	width: 100%;
+	padding: 40px 0;
+	height: 100px;
+	margin: auto;
+	font-size: 50px;
+	text-align: center;
+}
+
+#nav {
+	width: 100%;
+	padding: 10px 0;
+	background-color: darkorange;
+	text-align: center;
+	border-top: 1px solid darkorange;
+	border-bottom: 1px solid darkorange;
+}
+
+#main {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-top: 10px;
+}
+
+#footer {
+	height: 50px;
+	text-align: center;
+	background-color: darkorange;
+	padding: 20px;
+	margin-top: auto;
+	margin-bottom: auto;
+	color: #222222;
+}
+
+ol {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	font-size: 18px;
+	height: 35px;
+	line-height: 200%;
+	display: inline-block;
+}
+
+ol > li > a {
+	color: #222222;
+	text-decoration: none;
+	display: block;
+}
+
+ol > li {
+	width: 150px;
+	height: 40px;
+	float: left;
+	border-right: 1px solid #222222;
+	font-size: 20px;
+}
+
+ol > li:first-child {
+	border-left: 1px solid #222222;
+}
+
+ol > li:hover {
+	background-color: #222222;
+}
+
+ol > li:hover > a {
+	color: darkorange;
+}
+
+p > a {
+	color: darkorange;
+	text-decoration: none;
+
+}
+
+p > a:hover {
+	color: red;
+}
