@@ -12,12 +12,23 @@ body {
 }
 
 #top {
-	width: 100%;
+	width: 50%;
 	padding: 40px 0;
 	height: 100px;
 	margin: auto;
 	font-size: 50px;
 	text-align: center;
+	float:left;
+}
+
+#clock {
+	width: 50%;
+	padding: 40px 0;
+	height: 100px;
+	margin: auto;
+	font-size: 50px;
+	text-align: center;
+	float:left;
 }
 
 #nav {
@@ -27,6 +38,7 @@ body {
 	text-align: center;
 	border-top: 1px solid darkorange;
 	border-bottom: 1px solid darkorange;
+	clear: both;
 }
 
 #main {

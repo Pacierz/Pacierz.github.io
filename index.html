@@ -18,19 +18,43 @@
 
 	<body>
 		<div id="container">
+			<br>
 			<div id="top">
-				<p>Mikołaj Pacierz - Github</p>
+				Mikołaj Pacierz - Github
 
 			</div>
 
+			<div id="clock">
+
+			</div>
+
+			<script>
+				let clock = () => {
+				let date = new Date();
+				let hrs = date.getHours();
+				let mins = date.getMinutes();
+				let secs = date.getSeconds();
+
+				hrs = hrs < 10 ? "0" + hrs : hrs;
+				mins = mins < 10 ? "0" + mins : mins;
+				secs = secs < 10 ? "0" + secs : secs;
+
+				let time = `${hrs}:${mins}:${secs}`;
+				document.getElementById("clock").innerText = time;
+				setTimeout(clock, 1000);
+				};
+
+				clock();
+			</script>
+
 			<div id="nav">
 				<ol>
-					<li><a href="index.html">Strona główna</a></li>
+					<li><a target="_blank" href="https://github.com/Pacierz/Pacierz.github.io/index.html">Strona główna</a></li>
 					<li><a target="_blank" href="https://github.com/Pacierz/Pacierz.github.io/tree/master/Arkusze">Arkusze</a></li>
 					<li><a target="_blank" href="https://github.com/Pacierz/Pacierz.github.io/tree/master/JS">JavaScript</a></li>
 					<li><a target="_blank" href="https://drive.google.com/drive/u/2/folders/1hlVGTleogo7SrJvizATiDohF1YHthdiW">Python</a></li>
 					<li><a target="_blank" href="https://pacierzportfolio.000webhostapp.com">Moje portfolio</a></li>
-					<li><a href="links.html">Przydatne linki</a></li>
+					<li><a target="_blank" href="https://github.com/Pacierz/Pacierz.github.io/links.html">Przydatne linki</a></li>
 				</ol>
 
 			</div>
