@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Mikołaj Pacierz - Github</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Prezentacja mojego Githuba" />
+    <meta name="keywords" content="github"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/x-icon" href="icon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"/>
+    <meta name="author" content="Mikołaj Pacierz"/>
+    <meta name="robots" content="noindex, nofollow"/>
+
+</head>
+
+<body>
+<div id="container">
+    <br>
+    <div id="top">
+        Mikołaj Pacierz - Github
+
+    </div>
+
+    <div id="clock">
+
+    </div>
+
+    <script>
+        let clock = () => {
+            let date = new Date();
+            let hrs = date.getHours();
+            let mins = date.getMinutes();
+            let secs = date.getSeconds();
+
+            hrs = hrs < 10 ? "0" + hrs : hrs;
+            mins = mins < 10 ? "0" + mins : mins;
+            secs = secs < 10 ? "0" + secs : secs;
+
+            let time = `${hrs}:${mins}:${secs}`;
+            document.getElementById("clock").innerText = time;
+            setTimeout(clock, 1000);
+        };
+
+        clock();
+    </script>
+
+    <div id="nav">
+        <ol>
+            <li><a target="_blank" href="index.html">Strona główna</a></li>
+            <li><a target="_blank" href="arkusze.html">Arkusze</a></li>
+            <li><a target="_blank" href="https://github.com/Pacierz/Pacierz.github.io/tree/master/JS">JavaScript</a></li>
+            <li><a target="_blank" href="https://drive.google.com/drive/u/2/folders/1hlVGTleogo7SrJvizATiDohF1YHthdiW">Python</a></li>
+            <li><a target="_blank" href="https://pacierzportfolio.000webhostapp.com">Moje Portfolio</a></li>
+            <li><a target="_blank" href="links.html">Przydatne linki</a></li>
+        </ol>
+
+    </div>
+
+    <div class="main" id="mainarkusze">
+        <h1>Arkusze</h1>
+        <p><a target="_blank" href="Arkusze/stacja paliw/stacja.html">Stacja Paliw</a></p>
+        <p><a target="_blank" href="Arkusze/dzialaniamatematyczne/dzialania.html">Działania Matematyczne</a></p>
+
+    </div>
+
+    <div id="footer">
+        <p>Stronę opracował: Mikołaj Pacierz. Wszelkie prawa zastrzeżone &copy; 2020</p>
+
+    </div>
+</div>
+</body>
+</html>
