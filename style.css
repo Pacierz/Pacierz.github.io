@@ -8,7 +8,7 @@ body {
 
 #container {
 	width: 100%;
-	height: 100%
+	height: 100%;
 }
 
 #top {
@@ -61,6 +61,13 @@ body {
 
 }
 
+#error {
+	font-size: 150px;
+	font-weight: bold;
+	margin: auto;
+	text-align: center;
+	color: darkorange;
+}
 
 #footer {
 	height: 50px;
