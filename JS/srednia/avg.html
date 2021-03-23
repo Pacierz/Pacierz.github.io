@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Średnia</title>
+</head>
+<body>
+<script>
+    var suma = 0;
+    var oceny = prompt("Ile masz ocen?")
+    for (var i = 1; i <= oceny; i++) {
+        var ocena = parseInt(prompt(i + " Ocena: "));
+        if (ocena > 6 || ocena < 1) {
+            prompt("Ocena jest niepoprawna");
+            continue;
+        }
+        suma = suma + ocena;
+    }
+    var avg = suma/oceny;
+    document.write("Średnia: " + avg)
+
+
+
+</script>
+
+</body>
+</html>
