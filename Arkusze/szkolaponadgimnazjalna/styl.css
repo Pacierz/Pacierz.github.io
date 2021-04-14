@@ -1,0 +1,47 @@
+/*hyperlink yellow*/
+body {
+    font-family: Arial, serif;
+    color: white;
+
+}
+
+
+#banner {
+    background-color: #5957a1;
+    margin:auto;
+    /*margin wewnetrzny 10px*/
+    height: 70px;
+
+}
+
+#left {
+    background-color: #bbadcd;
+    width: 65%;
+    height: 450px;
+
+}
+
+#right {
+    background-color: #5957a1;
+    margin:auto;
+    width: 35%;
+    height: 450px;
+}
+
+#footer {
+    background-color: #5957a1;
+    margin:auto;
+    height: 50px;
+}
+
+hr {
+    color: yellow;
+}
+
+ol {
+    /*punktor kwadrat*/
+}
+
+table {
+    border: 1px dashed;
+}

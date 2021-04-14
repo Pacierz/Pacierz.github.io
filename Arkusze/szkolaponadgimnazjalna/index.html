@@ -1,0 +1,84 @@
+<!--https://egzamin-e14.blogspot.com/2018/05/arkusz-e14-09-1801.html-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Szkoła ponadgimnazjalna</title>
+    <link rel="stylesheet" type="text/css" href="styl.css"/>
+</head>
+<body>
+    <div id="banner">
+        <h1>Projekt strony internetowej szkoły ponadgimnnazjalnej</h1>
+    </div>
+
+    <div id="left">
+        <table>
+
+        </table>
+
+<!--        5 wierszy 2 kolumny-->
+<!--        szerokosc prawej kolumny: 405px-->
+<!--        komórki wiersza nagłówkowego zawierają kolejno wpisy: „Treść zapytania” i „Zrzut ekranu”-->
+<!--        w komórkach tabeli w kolejnych wierszach: treści zapytań z pliku zapytania.txt i obok –-->
+<!--        odpowiadające im zrzuty ekranu w formacie JPG zgodnie z obrazem 1,-->
+<!--        obrazy powinny posiadać tekst alternatywny zawierający nazwę pliku,-->
+
+    </div>
+
+    <div id="right">
+        <h2>Do pobrania</h2>
+
+        <ul>
+            <li>Zapytania SQL</li>
+            <li>Baza danych</li>
+        </ul>
+
+        <hr>
+
+        <h3>Wyznaczanie najniższej średniej</h3>
+
+        <ul>
+            <li>Polak <input type="num" id="sr1"> </li>
+            <li>Nowak <input type="num" id="sr2"></li>
+            <li>Rysik <input type="num" id="sr3"></li>
+        </ul>
+
+        <input type="submit" value="Wyznacz" onclick="wyznacz()"/>
+
+        <h3>Najniższa średnia</h3>
+
+        <script>
+            function wyznacz() {
+                var a = document.getElementById("sr1").value;
+                var b = document.getElementById("sr2").value;
+                var c = document.getElementById("sr3").value;
+
+                a = parseInt(a);
+                b = parseInt(b);
+                c = parseInt(c);
+
+                if (a < b && a < c) {
+                    document.getElementById("wyn").innerHTML=a;
+                }
+
+                else document.getElementById("wyn").innerHTML=c;
+                    if (b < c && b < a) {
+                        document. getElementById("wyn").innerHTML=b;
+                    }
+                    else document.getElementById("wyn").innerHTML=a;
+                        if (c < a && c < b) {
+                            document.getElementById("wyn").innerHTML=c;
+                        }
+                        else document.getElementById("wyn").innerHTML=b;
+            }
+        </script>
+    </div>
+
+    <div id="footer">
+        <h3>Stronę wykonał Mikołaj Pacierz</h3>
+
+    </div>
+
+</body>
+</html>
