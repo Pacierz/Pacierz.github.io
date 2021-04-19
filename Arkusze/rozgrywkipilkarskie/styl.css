@@ -1,0 +1,44 @@
+/*https://egzamin-ee09.blogspot.com/2021/04/arkusz-ee09-01-2101-sg.html */
+/*Mikołaj Pacierz*/
+
+#baner {
+    color: white;
+    text-align: center;
+    height: 370px;
+}
+
+#mecze {
+    color: white;
+    text-align: center;
+
+}
+
+#main {
+    background-color: whitesmoke;
+    height: 50px;
+}
+
+#left {
+    background-color: whitesmoke;
+    width: 70%;
+    height: 230px;
+    float: left;
+}
+
+#right {
+    background-color: whitesmoke;
+    width: 30%;
+    height: 230px;
+    text-align: right;
+    float: left;
+}
+
+body {
+    font-family: Tahoma, sans-serif;
+    background-color: crimson;
+}
+
+h2 {
+    text-align: center;
+
+}
